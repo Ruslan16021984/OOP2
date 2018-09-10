@@ -5,7 +5,7 @@ public class Triangle {
 	private int sideOne;
 	private int sideTwo;
 	private int sideThree;
-	private String sq;
+
 
 
 	
@@ -45,15 +45,22 @@ public class Triangle {
 	public void setSideThree(int sideThree) {
 		this.sideThree = sideThree;
 	}
-
 	public String getSquere() {
+		String squere = "";
+		if(squere()!=0) {
+			return squere = "Площадь треугольника= "+ squere();
+		}
+		return "Это не треугольник";
+	}
+
+	private double squere() {
 		
 		if(testTriangle(sideOne, sideTwo, sideThree)) {
 			double poluPerimetr = (double)(sideOne + sideTwo + sideThree)/2;
 			double squere = Math.sqrt((poluPerimetr*(poluPerimetr - sideOne) * (poluPerimetr - sideTwo)*(poluPerimetr - sideThree)) );
-			return sq = "площадь теугольника =" + squere;
+			return squere;
 		}else {
-			return sq = "this is not Triangle";
+			return 0;
 		}
 	}
 	

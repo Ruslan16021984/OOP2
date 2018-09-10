@@ -9,7 +9,7 @@ public class Main {
 		triangle.getSquere();
 		System.out.println(triangle.getSquere());
 		System.out.println(triangle2.getSquere());
-		System.out.println(triangle);
+
 
 	}
 
